@@ -1,0 +1,315 @@
+#include<stdio.h>
+int show(int a, int b);
+int main()
+{
+    int result=show(2,4);
+    printf("%d",result);
+    return 0;
+}
+int show(int a,int b)
+{
+    int c;
+    c=a+b;
+    return c;
+}
+_________________________________________________________________________________
+#include<stdio.h>
+int show(int a, int b,int c,int d);
+int main()
+{
+    int result=show(2,4,9,11);
+    printf("%d",result);
+    return 0;
+}
+int show(int a,int b,int c,int d)
+{
+    int e;
+    e=a+b+c+d;
+    return e;
+}
+_______________________________________________________________________________
+#include<stdio.h>
+int show(int a, int b);
+int main()
+{
+    int result=show(9,11);
+    printf("%d",result);
+    return 0;
+}
+int show(int a,int b)
+{
+    int e;
+    e=a+b;
+    return e;
+}
+___________________________________________________________________________
+#include<stdio.h>
+int show(int a, int b);
+int main()
+{
+    int result=show(11,9);
+    printf("%d",result);
+    return 0;
+}
+int show(int a,int b)
+{
+    int e;
+    e=a-b;
+    return e;
+}
+_____________________________________________________________________________
+#include<stdio.h>
+int show(int a, int b);
+int main()
+{
+    int result=show(89,7);
+    printf("%d",result);
+    return 0;
+}
+int show(int a,int b)
+{
+    int e;
+    e=a/b;
+    return e;
+}
+____________________________________________________________________________
+#include<stdio.h>
+int add(int a,int b);
+int sub(int a,int b);
+int multiple(int a,int b);
+int divide(int a,int b);
+int mod(int a,int b);
+int main()
+{
+    int result=add(89,7);
+    printf("%d",result);
+    int result1=sub(45,2);
+    printf("%d",result1);
+    int result2=multiple(2,2);
+    printf("%d",result2);
+    int result3=divide(9,3);
+    printf("%d",result3);
+    int result4=mod(5,2);
+    printf("%d",result4);
+    return 0;
+}
+int add(int a,int b)
+{
+    int e;
+    e=a+b;
+    
+    
+    return e;
+}
+int sub(int a , int b)
+{
+    
+    int m;
+    m=a-b;
+    return m;
+}
+int multiple(int a , int b)
+{
+    int n;
+    n=a*b;
+    return n;
+}
+int divide(int a,int b)
+{
+    int y;
+    y=a/b;
+    return y;
+}
+int mod(int a , int b)
+{
+    int s;
+    s=a%b;
+    return s;
+}
+_______________________________________________________________________
+#include<stdio.h>
+int voter(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int age=voter(a);
+    return 0;
+    
+}
+int voter(int a)
+{
+if(a>=18)
+{
+    printf("you are valid");
+}
+else{
+    printf("you are invalid");
+    }
+}
+____________________________________________________________________________
+#include<stdio.h>
+int show(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int add=show(a);
+    return 0;
+    
+}
+int show(int a)
+{
+if(a%2==0)
+{
+    printf("number is even");
+}
+else{
+    printf("number is odd");
+    }
+}
+******************************************************************************
+#include<stdio.h>
+int show(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=show(a);
+    int rem,sum=0;
+    return 0;
+    
+}
+int show(int a)
+{
+    int rem,sum=0;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum*10+rem;
+        a=a/10;
+    }
+    printf("the reverse number of num is;%d",sum);
+    return 0;
+}
+**************************************************************************
+#include<stdio.h>
+int show(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=show(a);
+    return 0;
+    
+}
+int show(int a)
+{
+    int rem,sum=0;
+    int temp;
+    temp==a;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum*10+rem;
+        a=a/10;
+    }
+    if(temp==a)
+    {
+      printf("the number is pallindrome");
+    }
+    else{
+        printf("number is not pallindrome");
+    }
+    
+    return 0;
+}
+*******************************************************************************************
+#include<stdio.h>
+int show(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=show(a);
+    return 0;
+    
+}
+int show(int a)
+{
+    int rem,sum=0;
+    int temp;
+    temp=a;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum+rem*rem*rem;
+        a=a/10;
+    }
+    if(temp==sum)
+    {
+      printf("the number is armstrong");
+    }
+    else{
+        printf("number is not armstrong");
+    }
+    
+    return 0;
+}
+*********************************************************************************************
+#include<stdio.h>
+int show(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=show(a);
+    return 0;
+    
+}
+int show(int a)
+{
+    int num = 2;
+    while(a>=num)
+    {
+    if(a%num==0)
+    {
+        printf("number is not prime");
+        break;
+    }
+    else if (a-1==num)
+    {
+        printf("number is  prime");
+        break;
+        
+    }
+    num++;
+    
+    }
+    
+    return 0;
+}
+************************************************************************************************************
+#include<stdio.h>
+int show(int a,int b);
+int main()
+{
+	int a,b;
+	scanf("%d",&a);
+	scanf("%d",&b);
+    int result=show(a,b);
+    printf("%d",result);
+    return 0;
+    
+}
+int show(int a,int b)
+{
+    int temp=a;
+    a=b;
+    b=temp;
+    printf("%d,%d,\n",a,b);
+    return 0;
+    
+}
+********************************************************************************************
+
