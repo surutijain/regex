@@ -1,0 +1,99 @@
+int main()
+{
+    int n;
+    printf("number");
+    scanf("%d",&n);
+    if(n%5==0 && n%11==0)
+    {
+        printf("num is div %d",n);
+        
+    }
+    else{
+        printf("num is not div");
+    }
+    return 0;
+}
+_______________________________________________________________________
+int main()
+{
+	int num=12321,rem,sum=0;
+	int temp;
+	temp==num;
+	while(num>0)
+	{ 
+	  rem=num%10;
+	  sum=sum*10+rem;
+	  num=num/10;
+	}
+	if(temp==num)
+	{
+		printf("num is pallindrome");
+	}
+	else{
+		printf("num is not pallindrome");
+	}
+	return 0;
+}
+__________________________________________________________
+int main()
+{
+	int num=153,rem,sum=0;
+	int temp;
+	temp=num;
+	while(num>0)
+	{ 
+	  rem=num%10;
+	  sum=sum+rem*rem*rem;
+	  num=num/10;
+	}
+	if(temp==sum)
+	{
+		printf("num is armstrong");
+		
+	}
+	else
+	{
+		printf("num is not armstrong");
+		
+	}
+	return 0;
+}
+_________________________________________________________
+#include<stdio.h>
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20;
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    printf("%d,%d",a,b);
+    return 0;
+}
+_________________________________________________________
+#include<stdio.h>
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20,c=30,d=40,e=50;
+    if(a>b && a>c && a>d && a>e)
+    {
+        printf("a is max");
+    }
+    else if(b>a && b>c && b>d && b>e)
+    {
+        printf("b is max");
+    }
+    else if(c>a && c>b && c>d && c>e)
+    {
+        printf("c is max");
+    }
+    else if (d>a && d>b && d>c && d>e)
+    {
+        printf("d is max");
+    }
+    else{
+        printf("e is max");
+    }
+    return 0;
+_____________________________________________________________________________
